@@ -5,28 +5,28 @@
 class Hashmatch < Formula
   desc "A simple cli tool to generate file hashes and match them."
   homepage ""
-  version "0.0.6"
+  version "0.0.7"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agrimrules/hashmatch/releases/download/v0.0.6/hashmatch_0.0.6_Darwin_x86_64.tar.gz"
-      sha256 "846e428b42a39b970aafa2981ca9b5ae488ca54cdd63bb9123a38e01d4ca8b6f"
+      url "https://github.com/agrimrules/hashmatch/releases/download/v0.0.7/hashmatch_0.0.7_Darwin_x86_64.tar.gz"
+      sha256 "5723b8dbcb899bfdb6c50ee1a578424b82f2cb07348ce9e0af8bf37f8bd3fcd1"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agrimrules/hashmatch/releases/download/v0.0.6/hashmatch_0.0.6_Darwin_arm64.tar.gz"
-      sha256 "07e060ccc8145599c1a55a55a1ce7c991d1a43e3728c428430dba656a75c3260"
+      url "https://github.com/agrimrules/hashmatch/releases/download/v0.0.7/hashmatch_0.0.7_Darwin_arm64.tar.gz"
+      sha256 "18ee2008482d8254db9c6078cc027feb5134c4ae945bf72ef19cc2de5daa364f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/agrimrules/hashmatch/releases/download/v0.0.6/hashmatch_0.0.6_Linux_x86_64.tar.gz"
-      sha256 "190fa7c9fff1ce0b61cc563b144c693fffe106d78fc19e643b4538b099275ed8"
+      url "https://github.com/agrimrules/hashmatch/releases/download/v0.0.7/hashmatch_0.0.7_Linux_x86_64.tar.gz"
+      sha256 "0020707afc48e8449234aeed168db7b70e8dc17e185331b5cf449d25fbf43eef"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agrimrules/hashmatch/releases/download/v0.0.6/hashmatch_0.0.6_Linux_arm64.tar.gz"
-      sha256 "9eee77d8adb13fbbbb1cb9971b1f1c10f3d81fb4e4ee363668588f361b2d0e50"
+      url "https://github.com/agrimrules/hashmatch/releases/download/v0.0.7/hashmatch_0.0.7_Linux_arm64.tar.gz"
+      sha256 "e521d6df213c924493d5a0ddbb22fa4833feb9c34eb08f8825e58c8683e641c7"
     end
   end
 
